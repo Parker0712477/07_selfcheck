@@ -6,32 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid</title>
   <style>
-    .grid-container{
-      width: 500px; 
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      width: 600px;
       margin: 0 auto;
     }
-    .grid-item{
-      width:100%;
+    .grid-item {
       background-color: red;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      color: white;
     }
-    .grid-item:nth-child(2n){
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+    }
+    .grid-item:nth-child(2n) {
       background-color: #bd4242;
+    }
+    .item2-3-7-8 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .item4-5 {
+      grid-column: span 2;
+    }
+    .item9-10 {
+      grid-column: span 2;
     }
   </style>
 </head>
 <body>
-  <!--TODO 수정-->
   <div class="grid-container">
-    <div class="grid-item item1">1</div>
-    <div class="grid-item item2">2</div>
-    <div class="grid-item item3">3</div>
-    <div class="grid-item item4">4</div>
-    <div class="grid-item item5">5</div>
-    <div class="grid-item item6">6</div>
-    <div class="grid-item item7">7</div>
-    <div class="grid-item item8">8</div>
-    <div class="grid-item item9">9</div>
-    <div class="grid-item item10">10</div>
+    <div class="grid-item item1">
+      <img src="./images/화면 캡처 2024-06-05 103559.png" alt="1">
+    </div>
+    <div class="grid-item item2-3-7-8">
+      <img src="./images/화면 캡처 2024-06-05 111800.png" alt="2">
+    </div>
+    <div class="grid-item item4-5">
+      <img src="./images/화면 캡처 2024-06-05 111719.png" alt="3">
+    </div>
+    <div class="grid-item item6">
+      <img src="./images/화면 캡처 2024-06-05 104958.png" alt="4">
+    </div>
+    <div class="grid-item item9-10">
+      <img src="./images/화면 캡처 2024-06-05 111819.png" alt="5">
+    </div>
+    <div class="grid-item item11">
+      <img src="./images/화면 캡처 2024-06-05 111955.png" alt="6">
+    </div>
+    <div class="grid-item item12">
+      <img src="./images/화면 캡처 2024-06-05 112011.png" alt="7">
+    </div>
+    <div class="grid-item item13">
+      <img src="./images/화면 캡처 2024-06-05 112024.png" alt="8">
+    </div>
+    <div class="grid-item item14">
+      <img src="./images/화면 캡처 2024-06-05 112031.png" alt="9">
+    </div>
+    <div class="grid-item item15">
+      <img src="./images/화면 캡처 2024-06-05 112047.png" alt="10">
+    </div>
   </div>
 </body>
 </html>
